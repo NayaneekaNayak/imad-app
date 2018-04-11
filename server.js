@@ -29,10 +29,16 @@ var content = {
           This is the first article of the exercise.This is the first article of the exercise.This is the first article of the exercise.This is the first article of the exercise.This is the first article of the exercise
           </p>`
           
-}
+};
 
-html template
-{`<html>
+function createtemplate (data) {
+    var title=title.content;
+    var heading=heading.content;
+    var date=data.date;
+    var content=data.content;
+
+ var htmlTemplate=
+`<html>
     <head>
         <title>
            $[title]
@@ -61,13 +67,17 @@ html template
     </div>
     </body>
 </html>
-`}
+`;
+  return htmltemplate
+}
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function(req,res)
-{res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+{res.send(createTemplate(articleOne));
 });
 
 
