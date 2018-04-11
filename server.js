@@ -51,7 +51,7 @@ function createtemplate (data) {
         </style>
     <body>
         <div class="container">
-    <div>
+        <div>
             <a href="/">Home</a>
         </div>
       <hr/>
@@ -63,8 +63,7 @@ function createtemplate (data) {
       </div>
       <div>
           $[content]
-    </div>
-    </div>
+      </div>
     </body>
 </html>
 `;
