@@ -31,8 +31,37 @@ var content = {
           
 }
 
-
-
+html template
+{`<html>
+    <head>
+        <title>
+            Article One Nayaneeka Nayak. This is my first article
+        </title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+          <link href="/ui/style.css" rel="stylesheet"/>
+    
+        <style>
+            
+        </style>
+    <body>
+        <div class="container">
+    <div>
+            <a href="/">Home</a>
+        </div>
+      <hr/>
+      <h3>
+             Article One
+      </h3>      
+      <div>
+          11th April 2018
+      </div>
+      <div>
+          $[content]
+    </div>
+    </div>
+    </body>
+</html>
+`}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
