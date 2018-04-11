@@ -41,7 +41,7 @@ function createtemplate (data) {
 `<html>
     <head>
         <title>
-           $[title]
+           ${title}
         </title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1">
           <link href="/ui/style.css" rel="stylesheet"/>
@@ -56,13 +56,13 @@ function createtemplate (data) {
         </div>
       <hr/>
       <h3>
-             $[heading]
+             ${heading}
       </h3>      
       <div>
           $[date]
       </div>
       <div>
-          $[content]
+          ${content}
       </div>
     </body>
 </html>
