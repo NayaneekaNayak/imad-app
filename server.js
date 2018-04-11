@@ -32,8 +32,8 @@ var articleOne = {
 };
 
 function createtemplate (data) {
-    var title=title.content;
-    var heading=heading.content;
+    var title=data.title;
+    var heading=data.heading;
     var date=data.date;
     var content=data.content;
 
