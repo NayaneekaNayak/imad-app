@@ -35,7 +35,7 @@ html template
 {`<html>
     <head>
         <title>
-            Article One Nayaneeka Nayak. This is my first article
+           $[title]
         </title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1">
           <link href="/ui/style.css" rel="stylesheet"/>
@@ -50,10 +50,10 @@ html template
         </div>
       <hr/>
       <h3>
-             Article One
+             $[heading]
       </h3>      
       <div>
-          11th April 2018
+         $[date]
       </div>
       <div>
           $[content]
