@@ -1,5 +1,15 @@
 console.log('Loaded!');
 var button= document.getElementById('counter');
 button.onclick= function(){ 
+    // Make a request to counter endpoint
     
+    
+    // capture the response and store it in a variable
+    
+    
+    // render the variable in correct
+    
+    counter = counter+1;
+    var span = document.getElementById('counter');
+    span.innerHTML = counter.toString();
 };
