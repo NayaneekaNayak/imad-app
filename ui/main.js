@@ -1,6 +1,6 @@
-console.log('Loaded!');
 var button= document.getElementById('counter');
-button.onclick= function(){ 
+var counter = 0;
+button.onclick= function() { 
     // Make a request to counter endpoint
     
     
@@ -9,7 +9,7 @@ button.onclick= function(){
     
     // render the variable in correct
     
-    counter = counter+1;
+    counter = counter + 1;
     var span = document.getElementById('counter');
     span.innerHTML = counter.toString();
 };
