@@ -81,11 +81,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
-app.get('/test-db', fuction(res,req));{
+var pool = new Pool(config);
+app.get('/test-db', function(res,req){
  //Make a select request
  //rerturns the results with a results
-}
+ pool.query('SELECT * FROM test', function(err, results){
+    if (err){
+        res.status(500).send(err.toString());}
+        else { 
+            res.send(JSON.stringfy(result));
+        }
+    } 
+ });
+});
 
 app.get('/article-one', function(req,res)
 {res.send(createtemplate(articleOne));
