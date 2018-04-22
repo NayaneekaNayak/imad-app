@@ -75,6 +75,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+app.get('/test-db', fuction(res,req));{
+ //Make a select request
+ //rerturns the results with a results
+}
+
 app.get('/article-one', function(req,res)
 {res.send(createtemplate(articleOne));
 });
