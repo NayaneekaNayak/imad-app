@@ -10,7 +10,7 @@ var config= {
     database:'coco98',
     host: 'db.imad.hausa.app.io',
     port:'5432',
-    password:DB_PASSWORD
+    password:PROCESS.env.DB_PASSWORD
 };
 var articleOne = {
     title: 'Article One | Nayaneeka Nayak',
