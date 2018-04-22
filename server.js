@@ -5,7 +5,13 @@ var Pool = required('pg').pool;
 var app = express();
 app.use(morgan('combined'));
 
-
+var config= {
+    user: 'coco98',
+    database:'coco98',
+    host: 'db.imad.hausa.app.io',
+    port:'5432',
+    password:DB_PASSWORD
+};
 var articleOne = {
     title: 'Article One | Nayaneeka Nayak',
     heading: 'article One',
